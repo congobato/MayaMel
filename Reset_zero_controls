@@ -1,0 +1,19 @@
+string $ctrlName[] = `ls -sl`;
+
+for ($con in $ctrlName){
+
+catchQuiet(`setAttr ($con + ".translateX") 0`);
+catchQuiet(`setAttr ($con + ".translateY") 0`);
+catchQuiet(`setAttr ($con + ".translateZ") 0`);
+
+catchQuiet(`setAttr ($con + ".rotateX") 0`);
+catchQuiet(`setAttr ($con + ".rotateY") 0`);
+catchQuiet(`setAttr ($con + ".rotateZ") 0`);
+
+/*
+catchQuiet(`setAttr ($con + ".scaleX") 1`);
+catchQuiet(`setAttr ($con + ".scaleY") 1`);
+catchQuiet(`setAttr ($con + ".scaleZ") 1`);
+*/
+
+}
